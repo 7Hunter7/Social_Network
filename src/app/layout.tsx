@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Viewport } from "next";
 import LayautClient from './components/layout/LayoutClient';
-import "./globals.css";
+import "./globals.scss";
 import { Inter } from "next/font/google";
 
 const inter = Inter({
