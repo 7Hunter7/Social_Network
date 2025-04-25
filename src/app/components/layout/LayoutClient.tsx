@@ -1,6 +1,6 @@
 import { PropsWithChildren } from "react";
 import Sidebar from "./sidebar/Sidebar";
-import styles from './LayoutClient.module.scss';
+import styles from './Layout.module.scss';
 
 
 export default function LayoutClient({children}: PropsWithChildren<unknown>) {

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Viewport } from "next";
-import LayautClient from './components/layout/LayoutClient';
+import LayoutClient from './components/layout/LayoutClient';
 import "./globals.scss";
 import { Inter } from "next/font/google";
 
@@ -31,7 +31,7 @@ export default function RootLayout({
       <body
         className={inter.className}
       >
-        <LayautClient> {children}</LayautClient>
+        <LayoutClient> {children}</LayoutClient>
       </body>
     </html>
   );
