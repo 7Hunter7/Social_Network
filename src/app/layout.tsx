@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Viewport } from "next";
-import LayoutClient from './components/layout/LayoutClient';
+import Layout from '../components/layout/Layout';
 import "./globals.scss";
 import { Inter } from "next/font/google";
 
@@ -31,7 +31,7 @@ export default function RootLayout({
       <body
         className={inter.className}
       >
-        <LayoutClient> {children}</LayoutClient>
+        <Layout> {children}</Layout>
       </body>
     </html>
   );
