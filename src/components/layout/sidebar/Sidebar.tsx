@@ -6,7 +6,7 @@ import styles from './Sidebar.module.scss';
 export default function Sidebar() {
   return (
     <div className={styles.sidebar}>
-      <Image src='/logo.svg' alt='logo' width={50} height={50} />
+      <Image src='/logo.svg' priority alt='logo' width={50} height={50} />
       <div>
         <Link href='/friends'>
           <User2 />
