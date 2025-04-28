@@ -9,16 +9,16 @@ export default function Sidebar() {
       <Image src='/logo.svg' priority alt='logo' width={50} height={50} />
       <div>
         <Link href='/friends'>
-          <User2 />
+          <User2 size={27}/>
         </Link>
         <Link href='/call'>
-          <Phone />
+          <Phone size={27}/>
         </Link>
         <Link href='/chats'>
-          <MessagesSquare />
+          <MessagesSquare size={27} />
         </Link>
         <Link href='/settings'>
-          <Cog />
+          <Cog size={27}/>
         </Link>
       </div>
     </div>
