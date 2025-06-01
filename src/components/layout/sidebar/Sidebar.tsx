@@ -12,12 +12,16 @@ export default function Sidebar() {
 
   return (
     <aside className={styles.sidebar}>
-      <Image src='/logo.svg' priority alt='logo' width={50} height={50} />
-      {MENU.map((item) => (
-        <Link href={item.url} key={item.url} className={cn({[styles.active]: pathname === item.url})}>
+      <Image className={styles.logo} src='/logo.svg' priority alt='logo' width={50} height={50} />
+      <div className={styles.menu}> 
+        {MENU.map((item) => (
+        <Link href={item.url} key={item.url} className={cn({[styles.active]: pathname === item.url},
+          styles.link
+        )}>
           <item.icon size={27} />
         </Link>
       ))}
+      </div>
     </aside>
   );
 }

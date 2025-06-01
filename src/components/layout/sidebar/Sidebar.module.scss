@@ -1,20 +1,30 @@
 .sidebar {
-	@apply flex items-center flex-col justify-between border-r border-border py-layout;
-	
+	padding: var(--layout);
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: column;
+	gap: calc(100vh/2 - 8rem);
+	border: 1px solid var(--border);
 
-	a {
-		@apply mb-8 block;
-
+	.menu {
+		display: flex;
+		flex-direction: column;
+		gap: var(--layout);
+	}
+	.link {
+		display: block;
+		color: var(--white);
 		&.active > svg {
-			@apply text-white;
+			color: var(--primary);
 		}
 	}
 
 	svg {
-		@apply text-[#7C7275] duration-300 ease-in-out transition-colors;
-
+		transition: all 0.3s ease-in-out;
 		&:hover {
-			@apply text-white;
+			color: var(--primary);
+			transform: scale(1.1);
 		}
 	}
 }
