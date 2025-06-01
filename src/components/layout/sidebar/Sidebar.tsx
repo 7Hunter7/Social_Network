@@ -3,12 +3,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from './Sidebar.module.scss';
 import { MENU } from './sidebar.data';
-import { getServerPathName } from '@/server-actions/get-path-name';
-import { cn } from 'clsx';
+import cn from 'clsx';
+import { usePathname } from 'next/navigation';
 
 
 export default function Sidebar() {
-  const pathname = getServerPathName();
+  const pathname = usePathname();
 
   return (
     <aside className={styles.sidebar}>
