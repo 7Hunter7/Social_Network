@@ -1,16 +1,16 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
-  --color: #efeff3;
+  --white: #efeff3;
+  --primary: #6F3AFF;
   --background: #0f0104;
+  --border: rgba(255, 255, 255, 0.12);
+  --layout: 1.25rem;
+  --transition-function: ease-in-out;
+  --transition-duration: 300ms;
 }
 
-html, body {
+body {
   height: 100vh;
-  color: var(--color);
-  background: var(--background);
+  color: var(--white);
   background: linear-gradient(
     to top right,
     #0f0104, #0f0a14), #0f0104;
